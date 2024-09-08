@@ -19,7 +19,7 @@ export default function ShortletLanding() {
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <MapPin className="h-6 w-6 mr-2" />
-          <span className="font-bold">Shortlet Apartment</span>
+          <span className="font-bold">Shortlet Porthacourt </span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -66,8 +66,8 @@ export default function ShortletLanding() {
           id="features"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
         >
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
+          <div className="container mx-auto text-black px-4 md:px-6">
+            <h2 className="text-3xl text-black font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Apartment Features
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,7 +98,7 @@ export default function ShortletLanding() {
           </div>
         </section>
         <section id="gallery" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Apartment Gallery
             </h2>
@@ -152,14 +152,14 @@ export default function ShortletLanding() {
           id="booking"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
         >
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto text-black px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
               Book Your Stay
             </h2>
             <form className="max-w-md mx-auto space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
-                <Input id="name" placeholder="John Doe" required />
+                <Input id="name" placeholder="John Doe" required  className="bg-transparent" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
@@ -168,6 +168,7 @@ export default function ShortletLanding() {
                   placeholder="john@example.com"
                   required
                   type="email"
+                  className="bg-transparent"
                 />
               </div>
               <div className="space-y-2">
@@ -176,7 +177,7 @@ export default function ShortletLanding() {
                   <PopoverTrigger asChild>
                     <Button
                       variant={"outline"}
-                      className={`w-full justify-start text-left font-normal ${
+                      className={`w-full justify-start bg-transparent text-left font-normal ${
                         !date && "text-muted-foreground"
                       }`}
                     >
@@ -184,11 +185,12 @@ export default function ShortletLanding() {
                       {date ? date.toDateString() : <span>Pick a date</span>}
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0">
+                  <PopoverContent className="w-auto p-0 bg-black">
                     <Calendar
                       mode="single"
                       selected={date}
                       onSelect={setDate}
+                       className="bg-transparent"
                     />
                   </PopoverContent>
                 </Popover>
@@ -198,6 +200,7 @@ export default function ShortletLanding() {
                 <Textarea
                   id="message"
                   placeholder="Any special requirements or requests?"
+                      className="bg-transparent"
                 />
               </div>
               <Button className="w-full" type="submit">
@@ -207,9 +210,9 @@ export default function ShortletLanding() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <footer  className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500">
-          © 2023 CozyStay Apartments. All rights reserved.
+          © 2024 Shortlet Porthacourt. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:underline underline-offset-4" href="#">
