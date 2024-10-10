@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,13 +16,25 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .background-t {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 44.67%, #000000 85.67%),
+    url("/images/shortlets/homepage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .circle-path {
+    clip-path: circle();
+  }
 }
+
+
