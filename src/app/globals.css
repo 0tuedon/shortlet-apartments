@@ -20,6 +20,11 @@ body {
   background: white;
 }
 
+@layer base {
+  .heading {
+    @apply text-[2rem] leading-[2.52rem] md:text-[3.25rem] font-bold md:leading-[4.06rem]
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

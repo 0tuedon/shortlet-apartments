@@ -21,7 +21,7 @@ const FaqSingle = () => {
           hidden: !isOpen,
         })}
       >
-        <p>
+        <p className="text-sm md:text-base">
           You can browse available properties on our platform, select your
           desired dates, and complete the booking process through our secure
           online system.

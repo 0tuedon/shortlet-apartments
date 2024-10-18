@@ -2,10 +2,10 @@ import { Button } from "../common";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex flex-col background-t py-40 text-white z-40 relative">
+    <div className="min-h-screen flex flex-col background-t py-40 text-white z-40 relative px-4">
       <div className="flex flex-col  max-w-[1280px] mx-auto w-full">
         <div className="max-w-[687px] flex flex-col gap-8">
-          <h1 className="text-[3.25rem] font-bold leading-[4.06rem]">
+          <h1 className="text-[2rem] leading-[2.5rem] md:text-[3.25rem] font-bold md:leading-[4.06rem]">
             Experience Luxury in the Heart of the City
           </h1>
           <p className="max-w-[489px]">

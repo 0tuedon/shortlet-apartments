@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import { Sora } from 'next/font/google'
+import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
   title: "Shortlet Portharcourt",
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
