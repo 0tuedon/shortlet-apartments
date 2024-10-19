@@ -15,7 +15,7 @@ const ContactUs = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     const metaParams = encodeURIComponent(`Good day, my name is ${data.fullName}. ’d like to book your ${data.apartmentType} from ${data.checkInDate}.  ${data.specialRequest ? "Special Request: " + data.specialRequest : ""}`);
 
-    router.push(`https://api.whatsapp.com/send?phone=2348094902833metaParams&text=${metaParams}`);
+    router.push(`https://api.whatsapp.com/send?phone=2348094902833&text=${metaParams}`);
   };
 
   return (
