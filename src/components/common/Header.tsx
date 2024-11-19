@@ -23,8 +23,11 @@ const Header = () => {
           ))}
         </div>
       </div>
-      
-      <Button theme="primary">Book Now</Button>
+      <div className="flex gap-4 items-center text-white ">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=2348094902833" className="underline">08094902833</a>
+      <Button className="hidden md:flex" theme="primary">Book Now</Button>
+      </div>
+  
       </div>
     </div>
   );
