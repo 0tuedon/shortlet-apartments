@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex gap-4 items-center text-white ">
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=2348094902833" className="underline">08094902833</a>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=2348109466000" className="underline">08109466000</a>
       <Button className="hidden md:flex" theme="primary">Book Now</Button>
       </div>
   
